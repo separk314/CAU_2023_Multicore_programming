@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dcf67f4-fbac-4700-91ad-346608b26a82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1_Lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pc_dynamic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pc_serial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pc_static_block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pc_static_cyclic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pc_dynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pc_dynamic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pc_serial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pc_serial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pc_static_block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pc_static_block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pc_static_cyclic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pc_static_cyclic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.pc_static_cyclic">
+}</component>
+  <component name="RunManager" selected="Application.pc_static_block">
+    <configuration name="pc_dynamic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pc_dynamic" />
+      <module name="Project1_Lab" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="pc_serial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pc_serial" />
       <module name="Project1_Lab" />
@@ -71,8 +74,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.pc_static_cyclic" />
         <item itemvalue="Application.pc_static_block" />
+        <item itemvalue="Application.pc_static_cyclic" />
+        <item itemvalue="Application.pc_dynamic" />
         <item itemvalue="Application.pc_serial" />
       </list>
     </recent_temporary>

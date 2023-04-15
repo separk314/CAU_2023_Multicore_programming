@@ -1,6 +1,6 @@
 public class pc_static_block {
     private static int NUM_END = 200000; // default input
-    private static int NUM_THREADS = 32; // default number of threads
+    private static int NUM_THREADS = 1; // default number of threads
 
     public static void main(String[] args) {
         if (args.length == 1) {
@@ -13,27 +13,27 @@ public class pc_static_block {
 
         long startTime = System.currentTimeMillis();    // program execution time starts
 
-        // 스레드 실행
+        // start threads
         for(int i=0; i<NUM_THREADS; i++) {
             int end;
             if (i == NUM_THREADS-1) {
-                end = NUM_END;
+                end = NUM_END;  // if thread[i] is last thread: end number is NUM_END
             } else {
-                end = i*blockSize + blockSize;
+                end = i*blockSize + blockSize;  // if thread[i] is not last thread: calculate by blockSize
             }
 
             threads[i] = new BlockThread(i*blockSize, end);
             threads[i].start();
         }
 
-        // 스레드 join()
+        // Thread join()
         for (int i=0; i<NUM_THREADS; i++) {
             try {
                 threads[i].join();
             } catch (InterruptedException e) {}
         }
 
-        // prime number 총 개수 구하기
+        // Get the total number of prime numbers
         for (int i=0; i<NUM_THREADS; i++) {
             totalCounter += threads[i].counter;
         }
@@ -41,6 +41,7 @@ public class pc_static_block {
         long endTime = System.currentTimeMillis();      // program execution time ends
         long timeDiff = endTime - startTime;
 
+        // print the result
         System.out.println("\n          < RESULT > ");
         for (int i=0; i<NUM_THREADS; i++) {
             System.out.println(i +" Thread: " + threads[i].timeDiff + " ms");
@@ -53,6 +54,11 @@ public class pc_static_block {
 class BlockThread extends Thread {
     int start, end, counter;
     long timeDiff;
+
+    /*
+        BlockThread tests whether the number is a prime number or not
+        from 'start' number ~ to 'end' number
+     */
 
     BlockThread(int start, int end) {
         this.start = start;
