@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dcf67f4-fbac-4700-91ad-346608b26a82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Prob2/MatmultD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prob2/mat1000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prob2/mat5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prob2/mat500.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Prob2/Original.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prob1/pc_dynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prob1/pc_dynamic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prob1/pc_serial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prob1/pc_serial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prob1/pc_static_block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prob1/pc_static_block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prob1/pc_static_cyclic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prob1/pc_static_cyclic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1_Lab/Prob2/MatmultD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1_Lab/Prob2/MatmultD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prob2/MatmultD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prob2/MatmultD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -23,14 +23,13 @@ public class MatmultD
         int b[][] = readMatrix();
 
         MulMatrixThread[] threads = new MulMatrixThread[NUM_THREADS];
+        ThreadController controller = new ThreadController(a.length, b[0].length);
 
         long startTime = System.currentTimeMillis();    // program execution time starts
 
-//        int[][] c = multMatrix(a,b);
-
         // Start threads
         for (int i=0; i<NUM_THREADS; i++) {
-            threads[i] = new MulMatrixThread();
+            threads[i] = new MulMatrixThread(a, b, controller);
             threads[i].start();
         }
 
@@ -43,7 +42,7 @@ public class MatmultD
 
         long endTime = System.currentTimeMillis();  // program execution time ends
 
-//        printMatrix(c);
+        printMatrix(controller.result);
 
         // Print Result
         System.out.printf("[thread_no]:%2d , [Total Execution Time]:%4d ms\n", NUM_THREADS, endTime-startTime);
@@ -79,41 +78,75 @@ public class MatmultD
         System.out.println();
         System.out.println("Matrix Sum = " + sum + "\n");
     }
-
-    public static int[][] multMatrix(int a[][], int b[][]) {     // a[m][n], b[n][p]
-        if(a.length == 0) return new int[0][0];
-        if(a[0].length != b.length) return null; // invalid dims
-
-        int n = a[0].length;
-        int m = a.length;
-        int p = b[0].length;
-        int ans[][] = new int[m][p];
-
-        for(int i = 0;i < m;i++){
-            for(int j = 0;j < p;j++){
-                for(int k = 0;k < n;k++){
-                    ans[i][j] += a[i][k] * b[k][j];
-                }
-            }
-        }
-        return ans;
-    }
 }
 
 class MulMatrixThread extends Thread {
     long diffTime;
+    static int[][] a, b;
+    int m, p, n;
+    ThreadController controller;
 
-    MulMatrixThread() {
-
+    MulMatrixThread(int a[][], int b[][], ThreadController controller) {
+        this.a = a;
+        this.b = b;
+        this.controller = controller;
+        m = a.length;
+        p = b[0].length;
+        n = a[0].length;
     }
 
     @Override
     public void run() {
         long startTime = System.currentTimeMillis();
+        int mIndex = controller.generateIndex();
 
-        
+        while (mIndex < m) {
+            controller.writeResult(mIndex, multMatrix(mIndex, n, p));
+            mIndex = controller.generateIndex();
+        }
 
         long endTime = System.currentTimeMillis();
         diffTime = endTime - startTime;
+    }
+
+    public static int[] multMatrix(int mIndex, int n, int p) {     // a[m][n], b[n][p]
+        int ans[] = new int[p];
+
+        for (int i=0; i<p; i++) {
+            for (int j=0; j<n; j++) {
+                ans[i] += a[mIndex][j] * b[j][i];
+            }
+        }
+
+        return ans;
+    }
+}
+
+class ThreadController {
+    // a[m][n], b[n][p] -> c[m][p]
+    // m을 먼저 계산 -> 필요한 부분: m의 index
+    public static int mIndex = 0;
+    public static int[][] result;
+    int m, p;
+
+    ThreadController(int m, int p) {
+        result = new int[m][p];
+        mIndex = -1;
+        this.m = m;
+        this.p = p;
+    }
+
+    public synchronized int generateIndex() {
+        mIndex += 1;
+        return mIndex;
+    }
+
+    public synchronized void writeResult(int index, int[] indexArray) {
+        // indexArray: 스레드가 계산한 result[index][]의 결과값
+        // type: int[p]
+
+        for (int i=0; i<p; i++) {
+            result[index][i] = indexArray[i];
+        }
     }
 }
