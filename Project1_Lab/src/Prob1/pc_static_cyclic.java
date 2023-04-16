@@ -1,3 +1,5 @@
+package Prob1;
+
 public class pc_static_cyclic {
     private static int NUM_END = 200000; // default input
     private static int NUM_THREADS = 1; // default number of threads

@@ -1,3 +1,5 @@
+package Prob1;
+
 public class pc_dynamic {
 
     private static int NUM_END = 200000; // default input
