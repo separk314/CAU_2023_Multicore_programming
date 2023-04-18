@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dcf67f4-fbac-4700-91ad-346608b26a82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Prob2/MatmultD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prob2/MulMatrixThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prob2/ThreadController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prob2/expalnation.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../proj1/problem2/Report_prob2.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../proj1/problem2/~$port_prob2.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prob2/MatmultD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prob2/MatmultD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/problem1/~$port_prob1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/problem1/~$port_prob1.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/problem1/~WRL0005.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1_excel.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1_excel.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../project/proj1/problem1/Report_prob1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/proj1/problem1/Report_prob1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/proj1/problem1/Report_prob1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/proj1/problem1/~$port_prob1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/proj1/problem2/Report_prob2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/proj1/problem2/Report_prob2.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,10 +40,12 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/82104/OneDrive-CAU/4-1/멀티코어/Multicore_programming/practice/Project1_Lab",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MatmultD">
+  <component name="RunManager" selected="Application.pc_dynamic">
     <configuration name="MatmultD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Prob2.MatmultD" />
       <module name="Project1_Lab" />
@@ -64,16 +59,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pc_dynamic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pc_dynamic" />
+    <configuration name="Prob1.pc_static_block" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prob1.pc_static_block" />
       <module name="Project1_Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Prob1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pc_serial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pc_serial" />
+    <configuration name="Prob1.pc_static_cyclic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prob1.pc_static_cyclic" />
       <module name="Project1_Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Prob1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pc_dynamic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prob1.pc_dynamic" />
+      <module name="Project1_Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Prob1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,20 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pc_static_cyclic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pc_static_cyclic" />
-      <module name="Project1_Lab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.pc_dynamic" />
+        <item itemvalue="Application.Prob1.pc_static_block" />
+        <item itemvalue="Application.Prob1.pc_static_cyclic" />
         <item itemvalue="Application.MatmultD" />
         <item itemvalue="Application.pc_static_block" />
-        <item itemvalue="Application.pc_static_cyclic" />
-        <item itemvalue="Application.pc_dynamic" />
-        <item itemvalue="Application.pc_serial" />
       </list>
     </recent_temporary>
   </component>
