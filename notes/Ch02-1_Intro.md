@@ -70,7 +70,7 @@ Writing good parallel programs should be
     
     : a program running with multiple threads that is executed simultaneously.
     
-    ![Untitled](02-1%20Intro%2021b6d4e0f3fb4188b9ab26b39e90bf11/Untitled.png)
+    ![Untitled]([02-1%20Intro%2021b6d4e0f3fb4188b9ab26b39e90bf11/Untitled.png](https://file.notion.so/f/s/f095e42d-399f-47be-8ca7-826d70117cb5/Untitled.png?id=d8d02f03-24d3-45a1-9d81-be450b25f760&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682238298649&signature=1sgY91OcF9VRFdOwYuMEwo_nHBiUgbBMhVsSyaPyirc&downloadName=Untitled.png))
     
 
 ### 1️⃣ Parallelism vs Concurrency
