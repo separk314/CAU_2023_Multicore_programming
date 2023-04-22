@@ -107,7 +107,7 @@ Writing good parallel programs should be
 
 </aside>
 
-![Untitled](02-1%20Intro%2021b6d4e0f3fb4188b9ab26b39e90bf11/Untitled%201.png)
+![image](https://file.notion.so/f/s/908b3ea2-f1fe-4744-a246-231827f7202e/Untitled.png?id=3f42f675-eaca-4643-8e18-60ba1d74b166&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682239151019&signature=HYIBlSwnAF1HhIYsR-2-1qgL44bCg9vskLTb_Fp-Myk&downloadName=Untitled.png)
 
 <Distributed Computing 특징>
 
