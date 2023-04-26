@@ -28,7 +28,7 @@
 
 ### Intel Core Duo
 
-![Untitled](02-2%20Intro%2035421e169c214337b0d276e532de98a0/Untitled.png)
+![image](https://file.notion.so/f/s/486157ad-2eff-4bf3-9185-4e4e3d28c59f/Untitled.png?id=e9381d8f-870d-4a5e-a9ae-a2e3ddef0527&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682962474360&signature=HLFFcqRrVw8OUzNMJJE6u4xkbMzRHBvyzvd68f7Il_8&downloadName=Untitled.png)
 
 - 각각 L1 cache를 가진다
 - L2 cache는 공유
@@ -37,7 +37,7 @@
 
 ### AMD Dual Core
 
-![Untitled](02-2%20Intro%2035421e169c214337b0d276e532de98a0/Untitled%201.png)
+![image](https://file.notion.so/f/s/96a6f14e-67fe-4505-b3cf-fab1098a3c04/Untitled.png?id=dc6bc5b9-e340-43c9-a63c-4b2ccad9f290&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682962494231&signature=VXwgIEuYee7QizCjqskshREQ8EMEuPto8U-NeRKd4Dg&downloadName=Untitled.png)
 
 - 각각 L1, L2 cache를 가짐
 - Coherent shared memory
@@ -46,7 +46,7 @@
 
 Ex. Sun Fire E25K
 
-![Untitled](02-2%20Intro%2035421e169c214337b0d276e532de98a0/Untitled%202.png)
+![image](https://file.notion.so/f/s/d001fd4f-8bb1-4ad6-9e2e-415021f47851/Untitled.png?id=d04c7bbb-704f-4332-a50a-df8d288ad49b&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682962517102&signature=0eCnR6M6jBujexiiUdSDqOO1KA9FW0ZhYxC_g5HWNAc&downloadName=Untitled.png)
 
 - 여러 프로세서들이 single shared memory에 연결됨
 - single OS
@@ -120,7 +120,7 @@ computation↑
 
 ### Locality and Parallelism
 
-![Untitled](02-2%20Intro%2035421e169c214337b0d276e532de98a0/Untitled%203.png)
+![image](https://file.notion.so/f/s/a6498681-3eb4-4efa-8d06-5d18fef5e3ad/Untitled.png?id=723b7d44-0e6b-42f1-a6ef-677500ffb862&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682962532804&signature=DTolAEMlG3E5bcsGIGcfAZgcr88M2wijh06Sp0g1lp4&downloadName=Untitled.png)
 
 - Parallel processors, collectively, have **large, fast cache**
     
