@@ -6,7 +6,7 @@
     - Instruction stream (명령어 스트림의 개수)
     - Data stream (처리 가능한 데이터 스트림)
     
-    ![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled.png)
+    ![image](https://file.notion.so/f/s/3372f36e-b769-4f2b-bd6a-b412b7f4be71/Untitled.png?id=1c3cbf15-e5bd-42c1-ae9c-d7ba9e083f6d&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963360405&signature=yc4CHPax1Y_0rF84uTem7KJ4d23WVxRM88qYXDV76fU&downloadName=Untitled.png)
     
     <aside>
     💡 Parallel computer는 크게 **SIMD와 MIMD**로 나눌 수 있다.
@@ -20,10 +20,6 @@
 
 - A serial (non-parallel) computer
 - 가장 오래된 type
-
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%201.png)
-
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%202.png)
 
 ### 2️⃣ SIMD
 
@@ -39,9 +35,6 @@
     
 - Ex. GPU
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%203.png)
-
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%204.png)
 
 ### 3️⃣ MISD
 
@@ -56,8 +49,6 @@
     (실제로 구현된 컴퓨터 X)
     
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%205.png)
-
 ### 4️⃣ MIMD
 
 : **Multiple Instruction, Multiple Data**
@@ -67,11 +58,10 @@
 - the most common type of parallel computer
 - Most modern **super-computers** fall into this category
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%206.png)
 
 # Creating a Parallel Program
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%207.png)
+![image](https://file.notion.so/f/s/73b216e4-f353-486a-86c5-e7a5518115b3/Untitled.png?id=9d255dec-be4b-4143-85c8-76815d2be480&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963455629&signature=JATteP6_TsM6C9Spm44PKvHsHsr2x6UjOtlHsHDo0pE&downloadName=Untitled.png)
 
 1. **Decomposition**: task 분해
 2. **Assignment**: 스레드에 task 할당
@@ -86,7 +76,7 @@
 - Break up computation into tasks to be divided among processes
 - identify concurrency and decide level at which to exploit
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%208.png)
+![image](https://file.notion.so/f/s/eff3bad9-6074-4b4f-bdce-c79195640fcc/Untitled.png?id=5c1ed75a-ae76-4bf8-9cc0-9bcb50dbdb75&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963475477&signature=9b9Cu7elPsBBKcmb6qMMFfQgNVFjm_9QTbKptbZA4Ys&downloadName=Untitled.png)
 
 ### Domain Decomposition
 
@@ -95,7 +85,7 @@
 
 데이터를 분해해서, 각각의 parallel task이 데이터 위에서 일한다.
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%209.png)
+![image](https://file.notion.so/f/s/d1cb1635-eced-4e1e-a73c-22292b4b6a41/Untitled.png?id=a5d9187f-dc67-41f9-9fbc-8f437d7a3edb&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963493952&signature=AouJ5OCLjK6NfagrtMbBFHnDh21VULorL1y3J9iG-yM&downloadName=Untitled.png)
 
 1. Load balancing
 2. per-workout overhead
@@ -110,7 +100,6 @@
 - Problem is decomposed according to the work that must be done.
 - Each task then performs a portion of the overall work.
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2010.png)
 
 <aside>
 💡 - Domain Decomposition: data와 task를 분해.
@@ -165,7 +154,7 @@
 
 (parallelized 될 수 있는 코드가 얼마나 있는가.)
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2011.png)
+![image](https://file.notion.so/f/s/94618141-b099-4dba-a4ed-d07eb92d1a19/Untitled.png?id=4a2ed42f-3329-49db-afc7-1e30b8774812&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963529271&signature=qlZuHYkj2N_Y4-Gd3k03XWmjHc1GimCPQpcQ6walq5k&downloadName=Untitled.png)
 
 SpeedUp = old running time / new running time
 
@@ -180,7 +169,7 @@ SpeedUp = old running time / new running time
 - p: fraction of work that can be parallelized
 - n: the number of processor
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2012.png)
+![image](https://file.notion.so/f/s/68604ed9-48a4-4c94-9d66-a3a80c1726d9/Untitled.png?id=5b143627-8ff6-40fc-a496-b20c36bd202e&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963544470&signature=TkZz8lTCGl9Gzrn66xfWWuZ2IwJBoDTHS9XPqGCncP8&downloadName=Untitled.png)
 
 <Implications of Amdahl’s Law>
 
@@ -194,7 +183,7 @@ SpeedUp = old running time / new running time
 
 - **********************Scalability**********************: the capability of a system to increase total throughput under an increased load when resources are added.
     
-    ![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2013.png)
+    ![image](https://file.notion.so/f/s/9333a6d7-5f1c-4e1a-be8c-8f4da976f269/Untitled.png?id=92cfdbcd-3af3-4225-af2d-0fac0678c965&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963562061&signature=4NMzHakM0saNV-GRax2wfoFUToCIF54JwVOCpx5iGeA&downloadName=Untitled.png)
     
     Hardware가 추가되면 speedup이 linear하게 증가한다.
     
@@ -226,8 +215,6 @@ SpeedUp = old running time / new running time
 - More opportunity for performance increase due to **low communication overhead**
 - Less opportunity for performance enhancement due to **worse load balance**.
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2014.png)
-
 **Fine-grain Parallelism**
 
 - 작은 덩어리
@@ -237,7 +224,6 @@ SpeedUp = old running time / new running time
 - Less opportunity for performance enhancement due to **high communication overhead**
 - Better opportunity for performance enhancement due to ****************************better load balance****************************.
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2015.png)
 
 - 알고리즘과 하드웨어에 따라 효율적인 granularity를 선택해야 한다.
 - 보통 오버헤드는 **communication, synchronization**에서 발생하므로, **Coarse-grain granularity가 더 유리**하다.
@@ -253,7 +239,6 @@ Ex. if all tasks are subject to a barrier synchronization point, the slowest tas
 (가장 느린 thread가 끝날 때까지 다른 thread들은 idle 상태를 유지
 → execution time of slowest task를 줄여야 한다.)
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2016.png)
 
 - General Load Balancing Problem
     - 전체 work는 최대한 빨리 끝나야 한다.
@@ -344,7 +329,6 @@ Message passing할 때, 프로그래머는 다음 상황에 따라 communication
 
 ### ① Point-to-Point
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2017.png)
 
 - Basic method of communication between two processors
     - Originating processor “sends” message to destination processor
@@ -358,7 +342,6 @@ Message passing할 때, 프로그래머는 다음 상황에 따라 communication
 
 - **Asynchronous**: Sender는 메세지가 보내진 것만 안다 == **Non-Blocking**
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2018.png)
 
 - **Synchronous**: 메세지가 도착하면 Sender가 알아차린다 == **Blocking**
 
@@ -384,7 +367,6 @@ Message passing할 때, 프로그래머는 다음 상황에 따라 communication
 
 - One processor sends the same information to many other processors
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2019.png)
 
 ### ③ Reduction
 
@@ -398,7 +380,7 @@ Ex. Every processor starts with a value and needs to know the sum of values stor
 
 적분 구간을 나눠서 계산하는 예제
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2020.png)
+![image](https://file.notion.so/f/s/ec3f5a51-c3af-43b4-8ed9-46a063959dea/Untitled.png?id=c284f91c-a7f9-441e-b566-26f6d776275f&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963623469&signature=Ut3zrSJ_YnXH6vkPneaxWC5mJIp9WRylOcu6CexLgbs&downloadName=Untitled.png)
 
 ```c
 static long num_steps = 10000
@@ -443,8 +425,6 @@ void main(int argc, char* argv[]) {
     
     Any thread/process must stop at this point(barrier) and cannot proceed until all other threads/processes reach this barrier.
     
-    ![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2021.png)
-    
 
 - Lock/semaphore
     - **Lock**: the first task acquires the lock. This task can then safely (serially) access the protected data or code.
@@ -455,8 +435,6 @@ void main(int argc, char* argv[]) {
 
 # 3️⃣ Locality
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2022.png)
-
 - communication: the slow accesses to “remote” data
 - ******************************************************Algorithm should do most work on local data******************************************************
 - Need to exploit spatial and temporal locality
@@ -464,8 +442,6 @@ void main(int argc, char* argv[]) {
 ### Locality of memory access (shared memory)
 
 Parallel computation is ************************************************************************serialized due to memory contention************************************************************************ and lack of bandwidth.
-
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2023.png)
 
 A[0], A[4], A[8], A[12] 4개의 데이터가 같은 메모리 공간에 있다고 가정해보자.
 
@@ -479,21 +455,11 @@ A[0], A[4], A[8], A[12] 4개의 데이터가 같은 메모리 공간에 있다�
 
 Distribute data to relieve contention and increase effective bandwidth.
 
-![기존의 memory interface](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2024.png)
-
-기존의 memory interface
-
-![수정한 memory interface](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2025.png)
-
-수정한 memory interface
-
 ### Memory Access Latency in Shared Memory Architectures
 
 - **UMA** (Uniform Memory Access)
     - processor(CPU) - Memory: 어떤 data에 접근하든 접근 시간 같다.
     - Centrally located memory
-    
-    ![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2026.png)
     
 
 - **NUMA** (Non-Uniform Memory Access)
@@ -502,14 +468,10 @@ Distribute data to relieve contention and increase effective bandwidth.
     - How to organize data affects performance
     - CC-NUMA (**************************************Cache-Coherent NUMA**************************************)
     
-    ![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2027.png)
-    
 
 ### Cache Coherence(캐시 일관성)
 
 : the uniformity of shared resouce data that ends up stored in multiple local caches.
-
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2028.png)
 
 - Problem: When a processor modifies a shared variable in local cache,
 different processors may have different value of the variable.
@@ -550,7 +512,6 @@ different processors may have different value of the variable.
 
 ### 🌟 Distributed Memory Architecture
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2029.png)
 
 - Only private(local) memory
 - Independent
@@ -566,7 +527,6 @@ different processors may have different value of the variable.
 
 ### 🌟 Hybrid Architecture
 
-![Untitled](03%20Performance%20of%20Parallel%20Programs%20b7bfe451df434c159b351625a6de58e3/Untitled%2030.png)
 
 - Combination of Shared/Distributed architecture
 - Scalable
