@@ -12,13 +12,10 @@
 
 - PCB(Process Control Block)에 프로세스에 관련된 정보들을 저장
 
-![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled.png)
 
 - 프로세서 1개에는 프로세스 1개만 실행 가능
     
-    → context switch가 일U어난다.
-    
-    ![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%201.png)
+    → context switch가 일어난다.
     
 
 ### Unix process
@@ -47,7 +44,6 @@ main() {
 }
 ```
 
-![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%202.png)
 
 # Threads
 
@@ -60,14 +56,11 @@ main() {
     - ********Register set********
     - **********Stack**********
 
-![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%203.png)
 
 - Thread가 Process와 공유하는 부분
     - 코드
     - 데이터 영역(메모리)
     - OS resources(opened fiMles)
-    
-    ![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%204.png)
     
 
 ### Multi-process vs Multi-thread
@@ -278,7 +271,7 @@ Thread myThread = new Thread("HappyThread");
 
 Java에서는 다중 상속이 안 되기 때문에, `Thread` 클래스가 아닌 `Runnable` 인터페이스의 `run()`을 구현하기도 한다.
 
-![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%205.png)
+![image](https://file.notion.so/f/s/f69a0c50-bbb9-47bf-a591-868660b671f4/Untitled.png?id=51f083ef-99e2-4ea2-8edf-91cc2e09138e&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682963986747&signature=icNSb1c3fnd9_5brDXzhiZKDl_snKv2KAtFzVNjV3Fw&downloadName=Untitled.png)
 
 - Runnable 인터페이스에는 `run()` 메소드 1개만 있다.
     
@@ -343,7 +336,7 @@ Java에서는 다중 상속이 안 되기 때문에, `Thread` 클래스가 아�
 
 ## Thread Life-Cycle
 
-![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%206.png)
+![image](https://file.notion.so/f/s/e6946a06-244c-4df1-9fd5-4e68ff2278c4/Untitled.png?id=c178bba6-4ecf-4f8f-94e0-37a164ba979f&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682964000070&signature=MkjCy87bJjuagY4UdFOBFpCHnmVHlTDSDsR_3sLyl_o&downloadName=Untitled.png)
 
 - 스레드 생성 → `start()` → 자동으로 `run()` 실행
 - 스레드는 `stop()` 또는 `run()`을 return한다.
@@ -356,7 +349,7 @@ Java에서는 다중 상속이 안 되기 때문에, `Thread` 클래스가 아�
 
 Alive state에는 sub-state들이 많다.
 
-![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%207.png)
+![image](https://file.notion.so/f/s/d84625e0-cfc8-4815-bffa-c05f0b42aa48/Untitled.png?id=9872829c-1f21-4aa0-a378-e20ae46f1c07&table=block&spaceId=f33e0516-75c1-4b3e-b02d-479e88e873e0&expirationTimestamp=1682964017196&signature=NucqEpxShwPyIYuZ7kk6GfMdetq_nF2mNcIEATD775w&downloadName=Untitled.png)
 
 - Thread Priority(딱히 중요하진 않다)
     - 1에서 10까지 중요도를 매길 수 있다
@@ -464,8 +457,6 @@ Alive state에는 sub-state들이 많다.
                 
             - t1.run(): 지금 실행되고 있는 스레드는 t1이므로 no printout
             - Main thread, _me thread는 동시에 실행된다.
-            
-            ![Untitled](04-1%20JAVA%20Thread%20Programming%207390d3bdfafa4cf39136ebe7d9af8de9/Untitled%208.png)
             
 
 - `sleep(long millis)`: 해당 스레드를 Block한다.
