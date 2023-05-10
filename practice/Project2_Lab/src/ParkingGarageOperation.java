@@ -1,3 +1,4 @@
+// Original Code
 
 class ParkingGarage {
     private int places;
@@ -25,9 +26,9 @@ class ParkingGarage {
 }
 
 
-class Car extends Thread {
+class Car2 extends Thread {
     private ParkingGarage parkingGarage;
-    public Car(String name, ParkingGarage p) {
+    public Car2(String name, ParkingGarage p) {
         super(name);
         this.parkingGarage = p;
         start();
@@ -79,7 +80,7 @@ public class ParkingGarageOperation {
     public static void main(String[] args){
         ParkingGarage parkingGarage = new ParkingGarage(7);
         for (int i=1; i<= 10; i++) {
-            Car c = new Car("Car "+i, parkingGarage);
+            Car2 c = new Car2("Car "+i, parkingGarage);
         }
     }
 }
