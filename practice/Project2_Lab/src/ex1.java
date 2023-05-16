@@ -22,7 +22,7 @@ public class ex1 {
         public void run() {
             try {
                 Thread.sleep(500);
-                System.out.println("\n< ConsumerThread 시작 >");
+                System.out.println("\n< ConsumerThread Starts >");
 
                 for(int i=0; i<4; i++) {
                     System.out.println("\n[TAKE] Current Queue: " + queue.toString());
@@ -44,7 +44,7 @@ public class ex1 {
         }
 
         public void run() {
-            System.out.println("< ProducerThread 시작 >");
+            System.out.println("< ProducerThread Starts >");
             try {
                 System.out.println("\n[PUT] Queue remaining capacity: " + queue.remainingCapacity());
                 System.out.println("[PUT] Try to insert 1");
