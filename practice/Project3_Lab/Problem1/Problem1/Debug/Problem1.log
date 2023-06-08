@@ -1,0 +1,2 @@
+﻿  prob1.c
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\Problem1\Problem1\prob1.c(28,1): error C3015: OpenMP 'for' 문의 초기화 형식이 잘못되었습니다.
