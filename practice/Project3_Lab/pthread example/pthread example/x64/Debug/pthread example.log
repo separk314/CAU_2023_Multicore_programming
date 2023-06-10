@@ -1,7 +1,4 @@
 ﻿  openmp_ray.cpp
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\openmp_ray.cpp(8,9): warning C4068: 알 수 없는 pragma 'warnings'
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\openmp_ray.cpp(37,11): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\openmp_ray.cpp(38,11): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\openmp_ray.cpp(79,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\openmp_ray.cpp(86,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  omp_pi_one.c
+  LINK : C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\x64\Debug\pthread example.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   pthread example.vcxproj -> C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\x64\Debug\pthread example.exe
