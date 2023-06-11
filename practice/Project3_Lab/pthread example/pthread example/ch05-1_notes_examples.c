@@ -146,8 +146,6 @@ int main()
 	pthread_exit(NULL);
 }
 
-*/
-
 
 // Example 5: Mutexes: 백터 곱셈 예제
 #include <pthread.h>
@@ -225,5 +223,93 @@ int main(int argc, char* argv[])
 	free(a);
 	free(b);
 	pthread_mutex_destroy(&mutexsum);
+	pthread_exit(NULL);
+}
+*/
+
+// Example 6: Control Variables
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <Windows.h>
+#include <thread>
+
+#define NUM_THREADS 3
+#define TCOUNT 10
+#define COUNT_LIMIT 12
+
+int count = 0;
+int thread_ids[3] = { 0,1,2 };
+pthread_mutex_t count_mutex;
+pthread_cond_t count_threshold_cv;
+
+void* inc_count(void* t)
+{
+	long my_id = (long)t;
+
+	for (int i = 0; i < TCOUNT; i++) {	// 10번 반복
+		pthread_mutex_lock(&count_mutex);
+		count++;
+
+		// COUNT_LIMIT에 도달했을 때 watch_count 스레드에게 알림
+		if (count == COUNT_LIMIT) {
+			pthread_cond_signal(&count_threshold_cv);
+			printf("inc_count(): thread %ld, count = %d Threshold reached.\n", my_id, count);
+		}
+
+		printf("inc_count(): thread %ld, count = %d, unlocking mutex\n", my_id, count);
+		pthread_mutex_unlock(&count_mutex);
+		Sleep(1000);
+	}
+
+	pthread_exit(NULL);
+}
+
+void* watch_count(void* t)
+{
+	long my_id = (long)t;
+
+	printf("Starting watch_count(): thread %ld\n", my_id);
+	pthread_mutex_lock(&count_mutex);
+
+	// 아직 count값이 한계점에 도달하지 않은 경우
+	while (count < COUNT_LIMIT) {
+		pthread_cond_wait(&count_threshold_cv, &count_mutex);
+		/*
+		* 위에서 잠궈놨던 count_mutex의 lock이 풀린다.
+		* 누군가 pthread_cond_signal(&count_threshold_cv)로 시그널을 주기 전까지
+		* block된 상태로 기다린다.
+		*/
+
+		printf("watch_count(): thread %ld Condition signal received.\n", my_id);
+		// inc_count에서 count_threshold_cv 시그널을 보냄: count값이 다 찼음!
+		// 자동으로 count_mutex는 다시 lock되었다.
+
+		count += 125;
+		printf("watch_count(): thread %ld count now = %d.\n", my_id, count);
+	}
+
+	pthread_mutex_unlock(&count_mutex);
+	pthread_exit(NULL);
+}
+
+int main(int argc, char* argv[])
+{
+	long t1 = 1, t2 = 2, t3 = 3;
+	pthread_t threads[3];
+
+	pthread_mutex_init(&count_mutex, NULL);
+	pthread_cond_init(&count_threshold_cv, NULL);
+
+	pthread_create(&threads[0], NULL, watch_count, (void*)t1);
+	pthread_create(&threads[1], NULL, inc_count, (void*)t2);
+	pthread_create(&threads[2], NULL, inc_count, (void*)t3);
+
+	for (int i = 0; i < NUM_THREADS; i++) 
+		pthread_join(threads[i], NULL);
+
+	printf("Main(): Waited on %d threads. Done.\n", NUM_THREADS);
+	pthread_mutex_destroy(&count_mutex);
+	pthread_cond_destroy(&count_threshold_cv);
 	pthread_exit(NULL);
 }

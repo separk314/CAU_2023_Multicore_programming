@@ -1,5 +1,9 @@
 ﻿  ch05-1_notes_examples.c
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(176,32): warning C4311: '형식 캐스트': 'void *'에서 'long'(으)로 포인터가 잘립니다.
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(216,54): warning C4312: '형식 캐스트': 'int'에서 더 큰 'void *'(으)로의 변환입니다.
-C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(195): warning C4716: 'dotprod': 값을 반환해야 합니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(248,22): warning C4311: '형식 캐스트': 'void *'에서 'long'(으)로 포인터가 잘립니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(265,22): warning C4311: '형식 캐스트': 'void *'에서 'long'(으)로 포인터가 잘립니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(289,58): warning C4312: '형식 캐스트': 'long'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(290,56): warning C4312: '형식 캐스트': 'long'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(291,56): warning C4312: '형식 캐스트': 'long'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(261): warning C4716: 'inc_count': 값을 반환해야 합니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(279): warning C4716: 'watch_count': 값을 반환해야 합니다.
   pthread example.vcxproj -> C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\x64\Debug\pthread example.exe
