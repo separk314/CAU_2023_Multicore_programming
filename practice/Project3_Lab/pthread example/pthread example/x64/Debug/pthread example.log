@@ -1,4 +1,5 @@
-﻿  openmp_ray.cpp
-  omp_pi_one.c
-  LINK : C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\x64\Debug\pthread example.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+﻿  ch05-1_notes_examples.c
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(176,32): warning C4311: '형식 캐스트': 'void *'에서 'long'(으)로 포인터가 잘립니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(216,54): warning C4312: '형식 캐스트': 'int'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\ch05-1_notes_examples.c(195): warning C4716: 'dotprod': 값을 반환해야 합니다.
   pthread example.vcxproj -> C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\x64\Debug\pthread example.exe

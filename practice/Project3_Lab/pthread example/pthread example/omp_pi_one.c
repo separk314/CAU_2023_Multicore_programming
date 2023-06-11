@@ -1,3 +1,4 @@
+/*
 #include <omp.h>
 #include <stdio.h>
 
@@ -25,3 +26,4 @@ void main()
 
 	printf("pi=%.10lf\n", pi);
 }
+*/

@@ -27,5 +27,8 @@
     <ClCompile Include="omp_pi_one.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ch05-1_notes_examples.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
