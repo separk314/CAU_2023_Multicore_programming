@@ -147,10 +147,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ch05-1_notes_examples.c" />
+    <ClCompile Include="count_atomic.cpp" />
+    <ClCompile Include="count_lock.cpp" />
+    <ClCompile Include="count_nolock.cpp" />
+    <ClCompile Include="ex1.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main2.cpp" />
     <ClCompile Include="omp_pi_one.c" />
     <ClCompile Include="openmp_ray.cpp" />
+    <ClCompile Include="psort.cpp" />
+    <ClCompile Include="ptransform.cpp" />
+    <ClCompile Include="thread_create_ex1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

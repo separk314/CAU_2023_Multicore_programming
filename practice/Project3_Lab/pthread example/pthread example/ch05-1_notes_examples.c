@@ -225,7 +225,7 @@ int main(int argc, char* argv[])
 	pthread_mutex_destroy(&mutexsum);
 	pthread_exit(NULL);
 }
-*/
+
 
 // Example 6: Control Variables
 #include <pthread.h>
@@ -275,11 +275,6 @@ void* watch_count(void* t)
 	// 아직 count값이 한계점에 도달하지 않은 경우
 	while (count < COUNT_LIMIT) {
 		pthread_cond_wait(&count_threshold_cv, &count_mutex);
-		/*
-		* 위에서 잠궈놨던 count_mutex의 lock이 풀린다.
-		* 누군가 pthread_cond_signal(&count_threshold_cv)로 시그널을 주기 전까지
-		* block된 상태로 기다린다.
-		*/
 
 		printf("watch_count(): thread %ld Condition signal received.\n", my_id);
 		// inc_count에서 count_threshold_cv 시그널을 보냄: count값이 다 찼음!
@@ -313,3 +308,4 @@ int main(int argc, char* argv[])
 	pthread_cond_destroy(&count_threshold_cv);
 	pthread_exit(NULL);
 }
+*/

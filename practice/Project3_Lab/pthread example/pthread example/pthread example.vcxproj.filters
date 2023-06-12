@@ -30,5 +30,26 @@
     <ClCompile Include="ch05-1_notes_examples.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ex1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_create_ex1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="count_nolock.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="count_lock.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="count_atomic.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="psort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ptransform.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
