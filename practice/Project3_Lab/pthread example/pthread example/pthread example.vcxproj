@@ -156,6 +156,7 @@
     <ClCompile Include="omp_pi_one.c" />
     <ClCompile Include="openmp_ray.cpp" />
     <ClCompile Include="psort.cpp" />
+    <ClCompile Include="pthread_pi.c" />
     <ClCompile Include="ptransform.cpp" />
     <ClCompile Include="thread_create_ex1.cpp" />
   </ItemGroup>

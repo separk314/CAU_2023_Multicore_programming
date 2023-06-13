@@ -1,4 +1,9 @@
-﻿  count_atomic.cpp
-  count_lock.cpp
+﻿  pthread_pi.c
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\pthread_pi.c(13,1): warning C4047: '초기화 중': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\pthread_pi.c(35,61): warning C4312: '형식 캐스트': 'int'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\pthread example\pthread_pi.c(27): warning C4716: 'run': 값을 반환해야 합니다.
+  count_atomic.cpp
+  psort.cpp
+  ptransform.cpp
   코드를 생성하고 있습니다...
   pthread example.vcxproj -> C:\Users\82104\OneDrive-CAU\4-1\멀티코어\Multicore_programming\practice\Project3_Lab\pthread example\x64\Debug\pthread example.exe

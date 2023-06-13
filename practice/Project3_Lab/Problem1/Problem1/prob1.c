@@ -1,17 +1,10 @@
+/*
 #include <stdio.h>
 #include <omp.h>
 #include <stdbool.h>
 #include <stdlib.h>
 //#include <pthread.h>
 #define MAX 200000
-
-/*
-	Scheduling type number
-	1: static with default chunck size
-	2: dynamic with default chunck size
-	3: static with chunk size 10
-	4: dynamic with chunk size 10
-*/
 
 bool isPrime(int num) {
 	if (num <= 1)	return false;
@@ -36,7 +29,7 @@ int static_default(int num) {
 	return count;
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
 	if (argc != 3) {
 		printf("Please enter 2 commands: \n");
 		printf("1. scheduling type number \n");
@@ -53,3 +46,4 @@ int main(int argc, char *argv[]) {
 
 	return 0;
 }
+*/

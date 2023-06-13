@@ -18,5 +18,23 @@
     <ClCompile Include="prob1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="omp_ex1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="omp_ex3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="omp_critical.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="omp_mat_vec.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="omp_schedule.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="parallel_mergesort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

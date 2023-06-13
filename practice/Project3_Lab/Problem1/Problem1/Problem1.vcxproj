@@ -143,6 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="omp_critical.c" />
+    <ClCompile Include="omp_ex1.c" />
+    <ClCompile Include="omp_ex3.c" />
+    <ClCompile Include="omp_mat_vec.c" />
+    <ClCompile Include="omp_schedule.c" />
+    <ClCompile Include="parallel_mergesort.c" />
     <ClCompile Include="prob1.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
